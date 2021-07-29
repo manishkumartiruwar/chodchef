@@ -45,14 +45,22 @@ float non_negative_integer ;
 
 cin>>positive_integer>>non_negative_integer ;
 
-if(positive_integer<non_negative_integer  && positive_integer % 5 == 0 )
-{
-    non_negative_integer = non_negative_integer- positive_integer - .50;
-    
-}
-
-cout<<non_negative_integer;
+  if (positive_integer % 5 == 0)
+    {
+        if (non_negative_integer >= positive_integer+ 0.5)
+        {
+            float c = non_negative_integer- (positive_integer + 0.5);
+            cout << c;
+        }
+        else
+        {
+            cout << non_negative_integer;
+        }
+    }
+    else
+    {
+        cout << non_negative_integer;
+    }
 
 	return 0;
 }
-
