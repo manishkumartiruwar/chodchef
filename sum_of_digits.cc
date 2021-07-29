@@ -30,11 +30,12 @@ int positive_integer_total_number_of_occurrences;
 cin>>positive_integer_total_number_of_occurrences;
 while (positive_integer_total_number_of_occurrences > 0){
    int positive_integer_nth_number;
+   int positive_integer_nth_number_sum=0;
    cin>> positive_integer_nth_number;
-   int positive_integer_nth_number_sum;
+   
    
 while(positive_integer_nth_number != 0){
-    positive_integer_nth_number_sum = positive_integer_nth_number_sum + positive_integer_nth_number%10;
+    positive_integer_nth_number_sum = positive_integer_nth_number_sum + positive_integer_nth_number %10;
     positive_integer_nth_number=positive_integer_nth_number/10;
 }   
     
