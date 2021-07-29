@@ -32,6 +32,21 @@ Output
 50
 */
 
+#include <bits/stdc++.h> 
+
+using namespace std;
+
+int main() {
+int positive_integer_total_number_of_test_cases;
+cin>>positive_integer_total_number_of_test_cases;
+    for(int i=0 ; i<positive_integer_total_number_of_test_cases ; i++){
+    int postive_integer1, postive_integer2;
+    cin>>postive_integer1>>postive_integer2;
+    cout<<postive_integer1+postive_integer2<<endl;
+    }
+
+	return 0;
+}
 
 
 
